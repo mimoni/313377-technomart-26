@@ -7,12 +7,12 @@
 <body>
 <header class="header">
   <div>
-    <a href="" class="logo">
+    <a class="logo">
       <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Техномарт">
     </a>
 
-    <form action="#">
-      <input type="text" placeholder="Поиск">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <input type="text" name="search" placeholder="Поиск">
     </form>
 
     <a href="">Закладки: <span>0</span></a>
@@ -307,15 +307,20 @@
 
   <section>
     <h2>контакты</h2>
+
     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-    <img src="img/map.png" width="300" height="158" alt="Большая Конюшенная ул., 19">
+
+    <a href="">
+      <img src="img/map.png" width="300" height="158" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </a>
+
     <a href="">Заблудились? Напишите нам!</a>
   </section>
 </main>
 
 <footer>
   <div>
-    <a href="" class="logo">
+    <a class="logo">
       <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Техномарт">
     </a>
 
@@ -349,9 +354,9 @@
     </p>
 
     <ul>
-      <li><a href="">Вконтакте</a></li>
-      <li><a href="">Фейсбук</a></li>
-      <li><a href="">Инстаграм</a></li>
+      <li><a href="" aria-label="Техномарт в Вконтакте"></a></li>
+      <li><a href="" aria-label="Техномарт в Фейсбуке"></a></li>
+      <li><a href="" aria-label="Техномарт в Инстаграме"></a></li>
     </ul>
 
     <ul>
@@ -366,5 +371,48 @@
     </ul>
   </div>
 </footer>
+
+<section class="modal">
+  <h2 class="visually-hidden">Напишите нам!</h2>
+
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="your-name">Ваше имя:</label>
+      <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+    </p>
+
+    <p>
+      <label for="your-e-mail">Ваш e-mail:</label>
+      <input type="email" name="email" id="your-e-mail" placeholder="email@example.com">
+    </p>
+
+    <p>
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" rows="5" placeholder="В свободной форме"></textarea>
+    </p>
+
+    <div>
+      <button type="submit">Отправить</button>
+    </div>
+  </form>
+  <button type="button" aria-label="Закрыть модальное окно"></button>
+</section>
+
+<section class="modal">
+  <h2>Как до нас добраться</h2>
+
+  <div class="map">
+    <p>
+      <img src="img/map_big.jpg" width="940" height="446" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3703435644716!2d30.320948154558927!3d59.93890005027899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1570408438777!5m2!1sru!2sru"
+      width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+
+  <button type="button" aria-label="Закрыть модальное окно"></button>
+</section>
+
 </body>
 </html>

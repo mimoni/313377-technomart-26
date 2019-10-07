@@ -11,8 +11,8 @@
       <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Техномарт">
     </a>
 
-    <form action="#" method="get">
-      <input type="text" placeholder="Поиск">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <input type="text" name="search" placeholder="Поиск">
     </form>
 
     <a href="">Закладки: <span>0</span></a>
@@ -30,7 +30,7 @@
 
     <div>
       <a href="">Равшан Джамшутович</a>
-      <a href="">выйти</a>
+      <a href="" aria-label="разлогиниться"></a>
     </div>
 
     <ul>
@@ -64,9 +64,9 @@
   <h1>перфораторы</h1>
 
   <section>
-    <h2>Фильтр товаров</h2>
+    <h2 class="visually-hidden">Фильтр товаров</h2>
 
-    <form action="https://echo.htmlacademy.ru">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Производители:</legend>
 
@@ -319,9 +319,9 @@
     </p>
 
     <ul>
-      <li><a href="">Вконтакте</a></li>
-      <li><a href="">Фейсбук</a></li>
-      <li><a href="">Инстаграм</a></li>
+      <li><a href="" aria-label="Техномарт в Вконтакте"></a></li>
+      <li><a href="" aria-label="Техномарт в Фейсбук"></a></li>
+      <li><a href="" aria-label="Техномарт в Инстаграм"></a></li>
     </ul>
 
     <ul>
@@ -336,5 +336,14 @@
     </ul>
   </div>
 </footer>
+
+<section class="modal">
+  <h2>Товар добавлен в корзину!</h2>
+
+  <div>
+    <a href="">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+  </div>
+</section>
 </body>
 </html>
