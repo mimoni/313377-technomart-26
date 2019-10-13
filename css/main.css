@@ -196,6 +196,7 @@ h2 {
 
 .search__input {
   width: 270px;
+  height: 42px; /* fix ie */
   color: #fff;
   font-size: 17px;
   line-height: 42px;
