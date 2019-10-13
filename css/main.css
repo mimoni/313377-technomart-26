@@ -144,6 +144,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   font-family: "Cuprum", sans-serif;
   background-color: #f2f6f8;
@@ -341,6 +346,66 @@ h2 {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+}
+
+.filter {
+  width: 220px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px -20px;
+  padding: 0;
+}
+
+.catalog__item {
+  width: 220px;
+  border: 1px solid #e5e5e5;
+  margin: 0 10px 20px;
+}
+
+
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f7f3ec;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 52px;
+  margin-bottom: 60px;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination__link {
+  display: block;
+  min-width: 38px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination__lin--next {
+  min-width: 140px;
 }
 
 .about-us {
