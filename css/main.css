@@ -1,0 +1,419 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-display: swap;
+  src: local("Cuprum"),
+  url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Cuprum";
+  font-style: italic;
+  font-display: swap;
+  src: local("Cuprum"),
+  url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-display: swap;
+  src: local("Cuprum"),
+  url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Cuprum";
+  font-style: italic;
+  font-display: swap;
+  src: local("Cuprum"),
+  url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+  url("../fonts/cuprumbolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Sans"),
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Sans"),
+  url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  min-width: 960px;
+  padding: 0;
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h2 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-left: 28px;
+  padding-right: 28px;
+  background-color: #ee3643;
+}
+
+.header {
+  font-family: "Cuprum", sans-serif;
+  background-color: #f2f6f8;
+  padding-bottom: 60px;
+}
+
+.header__top {
+
+  color: #fff;
+  background-color: #293449;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header__btn {
+  color: #fff;
+  font-size: 17px;
+  line-height: 42px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 #b52933;
+  transition: box-shadow 0.3s, background-color 0.3s, background 0.3s, background-color 0.3s;
+}
+
+.logo--footer {
+  height: 63px;
+}
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  width: 270px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 42px;
+  margin: 0;
+  padding: 0 20px 0 50px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.search__input::placeholder {
+  color: #fff;
+}
+
+.header__middle {
+  display: flex;
+  width: 940px;
+  margin: 47px auto 40px;
+}
+
+.header__slogan {
+  max-width: 200px;
+  font-family: "Cuprum", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  margin: 0 55px 0 54px;
+}
+
+.header__phone {
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.header__address {
+  color: #32425c;
+  margin: 0;
+}
+
+.header__login-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
+.header__login-menu li {
+  margin-right: 10px;
+}
+
+.header__login-menu li:last-child {
+  margin-right: 0;
+}
+
+.header__login-menu a {
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 21px;
+  line-height: 45px;
+  color: #000;
+  background-color: #fff;
+}
+
+.header__user-wrap {
+  display: flex;
+}
+
+.header__user-name {
+  font-size: 21px;
+  line-height: 45px;
+  color: #000;
+  background-color: #fff;
+}
+
+.header__user-logout {
+  color: #000;
+  background-color: #fff;
+}
+
+.header__user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header__user-menu a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  border-bottom: 1px solid #32425c;
+}
+
+.main-nav {
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none
+}
+
+.main-nav a {
+  display: block;
+  font-size: 17px;
+  line-height: 55px;
+  color: #fff;
+  padding: 0 30px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #293449;
+}
+
+.main-nav a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
+
+.about-us {
+
+}
+
+.about-us p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-us ul {
+  font-family: "Cuprum", sans-serif;
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contacts {
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.footer {
+  font-family: "Cuprum", sans-serif;
+  color: #fff;
+  background-color: #32425c;
+}
+
+.footer__top {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer__middle {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer__bottom {
+  background-color: #293449;
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer__menu a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__address {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer__menu-categories {
+  list-style: none;
+}
+
+.footer__menu-categories a {
+  color: #ffd180;
+  font-size: 18px;
+  line-height: 24px
+}
+
+.footer__bottom-wrapper {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__developer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__developer-contacts a {
+  color: #ffd180;
+}
