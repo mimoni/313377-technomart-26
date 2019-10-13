@@ -134,6 +134,16 @@ h2 {
   background-color: #ee3643;
 }
 
+.heading {
+  padding: 32px 28px;
+  font-family: "Cuprum", sans-serif;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .header {
   font-family: "Cuprum", sans-serif;
   background-color: #f2f6f8;
@@ -313,6 +323,26 @@ h2 {
   background-color: #1d2739;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.breadcrumbs li {
+  line-height: 18px;
+  color: #000000;
+}
+
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
 .about-us {
 
 }
@@ -333,6 +363,17 @@ h2 {
 }
 
 .contacts p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  background-color: #f2f6f8;
+}
+
+.description p {
   font-size: 13px;
   line-height: 24px;
 }
