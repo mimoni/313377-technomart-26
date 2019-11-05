@@ -20,7 +20,8 @@
 
         <label class="search__label" for="search" aria-label="поле поиска по сайту">
           <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            <path
+              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
           </svg>
         </label>
       </form>
@@ -46,7 +47,8 @@
         <a class="header__login-menu-enter" href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
             <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-            <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+            <path
+              d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
           </svg>
           Войти
         </a>
@@ -68,7 +70,7 @@
       <li><a href="">Контакты</a></li>
     </ul>
   </nav>
-</header>`
+</header>
 
 <main class="content content-index">
   <div class="container">
@@ -146,7 +148,7 @@
             <img src="img/product_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
             <span class="item__hover">
-              <a class="item__btn-buy" href="">купить</a>
+              <a class="item__btn-buy js-open-add-cart" href="">купить</a>
               <a class="item__btn-bookmark" href="">В закладки</a>
             </span>
           </span>
@@ -162,7 +164,7 @@
             <img src="img/product_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
             <span class="item__hover">
-              <a class="item__btn-buy" href="">купить</a>
+              <a class="item__btn-buy js-open-add-cart" href="">купить</a>
               <a class="item__btn-bookmark" href="">В закладки</a>
             </span>
           </span>
@@ -178,7 +180,7 @@
             <img src="img/product_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
             <span class="item__hover">
-              <a class="item__btn-buy" href="">купить</a>
+              <a class="item__btn-buy js-open-add-cart" href="">купить</a>
               <a class="item__btn-bookmark" href="">В закладки</a>
             </span>
           </span>
@@ -194,7 +196,7 @@
             <img src="img/product_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
             <span class="item__hover">
-              <a class="item__btn-buy" href="">купить</a>
+              <a class="item__btn-buy js-open-add-cart" href="">купить</a>
               <a class="item__btn-bookmark" href="">В закладки</a>
             </span>
           </span>
@@ -301,7 +303,7 @@
             <h3>Гарантия</h3>
 
             <p>
-              Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+              Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его
               возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
               Дом уж восстановите как-нибудь сами.
             </p>
@@ -348,11 +350,11 @@
 
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
 
-      <a class="contacts__map" href="">
+      <a class="contacts__map js-open-map" href="">
         <img src="img/map.png" width="300" height="158" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </a>
 
-      <a class="btn" href="">Заблудились? Напишите нам!</a>
+      <a class="btn js-open-write-us" href="">Заблудились? Напишите нам!</a>
     </section>
   </div>
 </main>
@@ -419,34 +421,37 @@
   </div>
 </footer>
 
-<section class="modal">
+<section class="modal modal--write-us js-popup-write-us">
   <h2 class="visually-hidden">Напишите нам!</h2>
 
   <form action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label for="your-name">Ваше имя:</label>
-      <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-    </p>
+    <div class="modal__input-wrapper">
+      <p>
+        <label for="your-name">Ваше имя:</label>
+        <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+      </p>
 
-    <p>
-      <label for="your-e-mail">Ваш e-mail:</label>
-      <input type="email" name="email" id="your-e-mail" placeholder="email@example.com">
-    </p>
+      <p>
+        <label for="your-e-mail">Ваш e-mail:</label>
+        <input type="email" name="email" id="your-e-mail" placeholder="email@example.com">
+      </p>
+    </div>
 
-    <p>
+    <div class="modal__textarea">
       <label for="message">Текст письма:</label>
       <textarea name="message" id="message" rows="5" placeholder="В свободной форме"></textarea>
-    </p>
+    </div>
 
-    <div>
-      <button type="submit">Отправить</button>
+    <div class="modal__btn-wrapper">
+      <button class="btn btn--wide" type="submit">Отправить</button>
     </div>
   </form>
-  <button type="button" aria-label="Закрыть модальное окно"></button>
+
+  <button class="modal__close js-popup-close" type="button" aria-label="Закрыть модальное окно"></button>
 </section>
 
-<section class="modal">
-  <h2>Как до нас добраться</h2>
+<section class="modal js-popup-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
 
   <div class="map">
     <p>
@@ -459,7 +464,21 @@
     </iframe>
   </div>
 
-  <button type="button" aria-label="Закрыть модальное окно"></button>
+  <button class="modal__close js-popup-close" type="button" aria-label="Закрыть модальное окно"></button>
 </section>
+
+<section class="modal modal--cart js-popup-add-cart">
+  <h2>Товар добавлен в корзину!</h2>
+
+  <div class="modal__btn-wrapper">
+    <a class="btn" href="">Оформить заказ</a>
+
+    <button class="btn btn--withe js-popup-close" type="button">Продолжить покупки</button>
+  </div>
+
+  <button class="modal__close js-popup-close" type="button" aria-label="Закрыть модальное окно"></button>
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>

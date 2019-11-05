@@ -91,7 +91,7 @@
               <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/>
             </g>
           </svg>
-      </a>
+        </a>
       </li>
       <li><a href="">Каталог</a></li>
       <li><a href="">Инструмент</a></li>
@@ -202,7 +202,7 @@
               <img src="img/product_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -218,7 +218,7 @@
               <img src="img/product_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -234,7 +234,7 @@
               <img src="img/product_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -250,7 +250,7 @@
               <img src="img/product_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -266,7 +266,7 @@
               <img src="img/product_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -282,7 +282,7 @@
               <img src="img/product_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -298,7 +298,7 @@
               <img src="img/product_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -314,7 +314,7 @@
               <img src="img/product_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -330,7 +330,7 @@
               <img src="img/product_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
               <span class="item__hover">
-                <a class="item__btn-buy" href="">купить</a>
+                <a class="item__btn-buy js-open-add-cart" href="">купить</a>
                 <a class="item__btn-bookmark" href="">В закладки</a>
               </span>
             </span>
@@ -437,13 +437,18 @@
   </div>
 </footer>
 
-<section class="modal">
+<section class="modal modal--cart js-popup-add-cart">
   <h2>Товар добавлен в корзину!</h2>
 
-  <div>
-    <a href="">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
+  <div class="modal__btn-wrapper">
+    <a class="btn" href="">Оформить заказ</a>
+
+    <button class="btn btn--withe js-popup-close" type="button">Продолжить покупки</button>
   </div>
+
+  <button class="modal__close js-popup-close" type="button" aria-label="Закрыть модальное окно"></button>
 </section>
+
+<script src="js/main.js"></script>
 </body>
 </html>
